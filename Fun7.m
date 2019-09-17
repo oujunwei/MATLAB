@@ -1,9 +1,9 @@
 %Fun7
 %Multidirectional Prediction Approach for Dynamic Multiobjective Optimization Problems
-function Fun7
+function Fun7()
 ps();
+end
 function pf()
-t = 0;
 for t=0:0.1:1;
     f1=0:0.01:1 ;
     
@@ -14,11 +14,11 @@ for t=0:0.1:1;
     plot(f1,f2,'b','Linewidth',2); %»­¸öÌå
     hold on;
     pause(1);
-end;
+end
 hold off;
+end
 
-function ps()
-    t=0
+function ps()   
     for t=0:0.1:1
         x1 = 0:0.01:1 ;
         Gt = sin(t*pi/12)
@@ -29,4 +29,5 @@ function ps()
         ylabel('x_i');
         xlabel('x1');
         pause(1);
-    end;
+    end
+end
