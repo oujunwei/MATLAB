@@ -4,7 +4,7 @@ fronty=(1-frontx.^0.5) ;
 plot(frontx,fronty,'b','Linewidth',2)
 hold on;
 hold on
-A=importdata('C:\Users\xdw-001\Documents\GitHub\cmoo\cexe\data\dynamic\PS\pf_FDA1_0_85.dat');
+A=importdata('.\PS\pf_FDA1_0_49.dat');
 
 t= 84/10;
 gt=sin(0.5*pi*t);
