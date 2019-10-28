@@ -1,3 +1,5 @@
+
+%This contains five algorithms,
 n=50;
 x=1:n;
 
@@ -24,7 +26,7 @@ plot(x,y2,'.k-',x,y3,':',x,y4,'r-',x,y5,'.c-')
  legend('PDTEA','DNSA-||','PPS','MOEA/D','SGEA');
  ylabel('IGD');
  xlabel('time');
-%·ÅÐ¡Í¼
+%
 axes('position',[0.3 0.26 0.5 0.36]); %
 plot(x,y1,'m-','LineWidth',1.5);
 hold on
