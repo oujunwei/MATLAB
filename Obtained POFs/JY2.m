@@ -13,10 +13,10 @@ hold off
 %A=importdata('E:\project\做实验\SGEA_30\PF_SGEA_30\pf_JY2_2_110.dat');
 %A=importdata('E:\project\做实验\HLSH_30\PF\pf_JY2_0_110.dat');
 %A=importdata('E:\project\做实验\Dy-NSGA2\PF\pf_JY2_0_110.dat');
-A=importdata('E:\project\做实验\DVEPSO\PF\pf_JY2_1_5.dat');
+A=importdata('..\data\DNSGA2A\PF\pf_JY2_1_5.dat');
 F1=A(:,1)
 F2=A(:,2)
-plot(F1,F2,'ro'); %画个体
+plot(F1,F2,'ro'); %
 ylabel('f2');
 xlabel('f1');
 title('t=5','Fontname','黑体','Fontsize',13,'FontWeight','bold');
