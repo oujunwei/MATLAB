@@ -7,18 +7,18 @@ hold off
     plot(f1,f2,'Linewidth',2)
     hold on;
     
-%A=importdata('..\data\MI\PF\pf_JY1_1_30.dat');
-%A=importdata('..\data\SGEA\PF\pf_JY1_1_30.dat');
-%A=importdata('..\data\PPS\PF\pf_JY1_0_30.dat');
-%A=importdata('..\data\DNSGA2A\PF\pf_JY1_1_30.dat');
-A=importdata('..\data\DNSGA2B\PF\pf_JY1_1_30.dat');
+%A=importdata('..\data\MI\PF\pf_JY1_1_5.dat');
+%A=importdata('..\data\SGEA\PF\pf_JY1_1_5.dat');
+%A=importdata('..\data\PPS\PF\pf_JY1_0_5.dat');
+%A=importdata('..\data\DNSGAIIA\PF\pf_JY1_1_5.dat');
+A=importdata('..\data\DNSGAIIB\PF\pf_JY1_1_5.dat');
 
 F1=A(:,1)
 F2=A(:,2)
 plot(F1,F2,'ro'); %
 ylabel('f2');
 xlabel('f1');
-title('t=30','Fontname','ºÚÌå','Fontsize',13,'FontWeight','bold');
+title('t=5','Fontname','ºÚÌå','Fontsize',13,'FontWeight','bold');
 ylim([0,1]);
 xlim([0,1]);
 set(gca,'XTick',[0:0.25:1]);
