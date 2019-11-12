@@ -6,7 +6,6 @@ def save(url_output_file, re):
 #First, we need to  estimate the type of re, which can be int, list,tuple, dic, str
         if isinstance(re,list):
             for k in re:
-                k.strip("\n") # remove empty content
                 if len(k) >0:
                     file.write(k.replace("\n","") )
                     file.write('\n')
