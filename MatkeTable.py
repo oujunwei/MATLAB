@@ -19,9 +19,11 @@ ouput = localPath+"\\table\\"+metrics+".dat";
 problems = [];
 # save algorithm, types (frequency), problems
 all_result = [] ; # save all results including all algorithms.
-##### how to use it?
-#
-#
+# how to use it? and 
+#First, we need to set some parameter, including algorithms
+# the nubmer of change frequency,
+# the number of test problems.
+#Second, experimental results must be put into file.
 
 for i in range(0, len(algorithms)):
 
