@@ -1,16 +1,17 @@
 import os
 import WriteFile as wf
 
+#path
 path = os.getcwd()
 localPath = os.path.join(path,os.path.normpath("data"))
 
 # all compared algorithms.
 algorithms = ["SGEA","MI","PPS","DNSGAIIA","DNSGAIIB"];
 
-#Each test problem includes the number of results. For example, "1020"
+#Each test problem includes the number of types. For example, "10.20"
 #refers that the severity of change is set to 10, and the frequency of
 #change is set to 20.
-results = ["1010", "1020", "1030"];
+type = ["10.10", "10.20", "10.30"];
 
 metrics ="MS";
 ouput = localPath+"\\table\\"+metrics+".dat";
@@ -18,12 +19,15 @@ ouput = localPath+"\\table\\"+metrics+".dat";
 problems = [];
 # save algorithm, types (frequency), problems
 all_result = [] ; # save all results including all algorithms.
+##### how to use it?
+#
+#
 
 for i in range(0, len(algorithms)):
 
     algorit_result =[] # save all results of an algorithm.
-    for j in range(0, len(results)):
-        metric_p =localPath+"\\"+algorithms[i]+"\\"+results[j]+"\\evaluate\\statistics\\"+metrics+".dat"
+    for j in range(0, len(type)):
+        metric_p =localPath+"\\"+algorithms[i]+"\\"+type[j]+"\\evaluate\\statistics\\"+metrics+".dat"
         rs=wf.readFile(metric_p,"r","utf-8")
 
         mean_deviation = []
@@ -54,10 +58,10 @@ file = open(ouput, 'a+',encoding='utf-8')
 for i in  range(0, len(problems)):
     file.write("\\hline  \\multirow{3}{*}{"+problems[i]+"}")
     file.write('\n')
-    for j in range(0, len(results)):
-        file.write()
+    for j in range(0, len(type)):
+        file.write("&$("+type[j].split(".")[0] +","+ type[j].split(".")[1]+")$ " )
         for k in range(0, len(algorithms)):
-            file.write(all_result[k][j][i])
+            file.write(all_result[k][j][i]+" ")
         file.write("\\\\")
         file.write('\n')
 file.close()
