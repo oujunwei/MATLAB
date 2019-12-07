@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2019.8.23)  12 NOV 2019 16:38
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2019.7.31)  7 DEC 2019 12:18
 entering extended mode
 **main.tex
 (D:\Github\MATLAB\data\table\Latex\main.tex
@@ -41,11 +41,10 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 
-("D:\Program Files\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-\Gread@gobject=\count87
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -62,13 +61,13 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@tnote=\count88
-\c@fnote=\count89
-\c@cnote=\count90
-\c@ead=\count91
-\c@author=\count92
+\c@tnote=\count87
+\c@fnote=\count88
+\c@cnote=\count89
+\c@ead=\count90
+\c@author=\count91
 \@eadauthor=\toks15
-\c@affn=\count93
+\c@affn=\count92
 \absbox=\box26
 \keybox=\box27
 \Columnwidth=\dimen106
@@ -86,7 +85,7 @@ Package: natbib 2009/11/07 8.31a (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count94
+\c@NAT@ctr=\count93
 )
 \splwrite=\write3
 )
@@ -194,13 +193,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -209,15 +208,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen111
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks19
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks20
 \eqnshift@=\dimen112
 \alignsep@=\dimen113
@@ -246,8 +245,8 @@ LaTeX Info: Redefining \selectfont on input line 756.
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\CJKnumb.sty"
 Package: CJKnumb 2008/12/29 4.8.2
-\CJK@q=\count107
-\CJK@r=\count108
+\CJK@q=\count106
+\CJK@r=\count107
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -255,7 +254,7 @@ nment
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count109
+\c@float@type=\count108
 \float@exts=\toks23
 \float@box=\box33
 \@float@everytoks=\toks24
@@ -265,14 +264,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks25
-\c@algorithm=\count110
+\c@algorithm=\count109
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count111
-\c@ALC@line=\count112
-\c@ALC@rem=\count113
-\c@ALC@depth=\count114
+\c@ALC@unique=\count110
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
 \ALC@tlm=\skip50
 \algorithmicindent=\skip51
 )
@@ -285,9 +284,8 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -298,14 +296,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\multicol.sty"
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count115
+\c@tracingmulticols=\count114
 \mult@box=\box35
 \multicol@leftmargin=\dimen119
-\c@unbalance=\count116
-\c@collectmore=\count117
-\doublecol@number=\count118
-\multicoltolerance=\count119
-\multicolpretolerance=\count120
+\c@unbalance=\count115
+\c@collectmore=\count116
+\doublecol@number=\count117
+\multicoltolerance=\count118
+\multicolpretolerance=\count119
 \full@width=\dimen120
 \page@free=\dimen121
 \premulticols=\dimen122
@@ -335,8 +333,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box56
 \@tempa=\box57
 \@tempa=\box58
-\c@columnbadness=\count121
-\c@finalcolumnbadness=\count122
+\c@columnbadness=\count120
+\c@finalcolumnbadness=\count121
 \last@try=\dimen124
 \multicolovershoot=\dimen125
 \multicolundershoot=\dimen126
@@ -349,16 +347,16 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip55
 \LTpre=\skip56
 \LTpost=\skip57
-\LTchunksize=\count123
+\LTchunksize=\count122
 \LTcapwidth=\dimen127
 \LT@head=\box61
 \LT@firsthead=\box62
 \LT@foot=\box63
 \LT@lastfoot=\box64
-\LT@cols=\count124
-\LT@rows=\count125
-\c@LT@tables=\count126
-\c@LT@chunks=\count127
+\LT@cols=\count123
+\LT@rows=\count124
+\c@LT@tables=\count125
+\c@LT@chunks=\count126
 \LT@p@ftn=\toks26
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty"
@@ -373,12 +371,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen135
 \cmidrulekern=\dimen136
 \defaultaddspace=\dimen137
-\@cmidla=\count128
-\@cmidlb=\count129
+\@cmidla=\count127
+\@cmidlb=\count128
 \@aboverulesep=\dimen138
 \@belowrulesep=\dimen139
-\@thisruleclass=\count130
-\@lastruleclass=\count131
+\@thisruleclass=\count129
+\@lastruleclass=\count130
 \@thisrulewidth=\dimen140
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\array.sty"
@@ -400,7 +398,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@old@col=\dimen145
 \TX@target=\dimen146
 \TX@delta=\dimen147
-\TX@cols=\count132
+\TX@cols=\count131
 \TX@ftn=\toks28
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\caption\caption2.sty"
@@ -444,10 +442,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip62
 \subfigcapmargin=\dimen157
 \subfiglabelskip=\skip63
-\c@subfigure=\count133
-\c@lofdepth=\count134
-\c@subtable=\count135
-\c@lotdepth=\count136
+\c@subfigure=\count132
+\c@lofdepth=\count133
+\c@subtable=\count134
+\c@lotdepth=\count135
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -465,16 +463,16 @@ Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\multirow\bigdelim.sty")
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count137
+\linenopenalty=\count136
 \output=\toks30
-\linenoprevgraf=\count138
+\linenoprevgraf=\count137
 \linenumbersep=\dimen158
 \linenumberwidth=\dimen159
-\c@linenumber=\count139
-\c@pagewiselinenumber=\count140
-\c@LN@truepage=\count141
-\c@internallinenumber=\count142
-\c@internallinenumbers=\count143
+\c@linenumber=\count138
+\c@pagewiselinenumber=\count139
+\c@LN@truepage=\count140
+\c@internallinenumber=\count141
+\c@internallinenumbers=\count142
 \quotelinenumbersep=\dimen160
 \bframerule=\dimen161
 \bframesep=\dimen162
@@ -518,7 +516,7 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 ))
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+Package ifpdf Info: pdfTeX in pdf mode not detected.
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
@@ -534,8 +532,8 @@ Package: hycolor 2009/12/12 v1.6 Color options of hyperref/bookmark (HO)
 Package: xcolor-patch 2009/12/12 xcolor patch
 ))
 \@linkdim=\dimen163
-\Hy@linkcounter=\count144
-\Hy@pagecounter=\count145
+\Hy@linkcounter=\count143
+\Hy@pagecounter=\count144
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2010/01/16 v6.80c Hyperref: PDFDocEncoding definition (HO)
@@ -569,7 +567,7 @@ Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\bigintcalc.sty"
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 ))
-\Fld@menulength=\count146
+\Fld@menulength=\count145
 \Field@Width=\dimen164
 \Fld@charsize=\dimen165
 \Field@toks=\toks31
@@ -584,23 +582,29 @@ Package hyperref Info: PDF/A mode OFF on input line 4732.
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2009/12/02 v1.10 At begin shipout hook (HO)
 )
-\Hy@abspage=\count147
-\c@Item=\count148
+\Hy@abspage=\count146
+\c@Item=\count147
 )
-*hyperref using default driver hpdftex*
-("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2010/01/16 v6.80c Hyperref driver for pdfTeX
+*hyperref using default driver hdvips*
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hdvips.def"
+File: hdvips.def 2010/01/16 v6.80c Hyperref driver for dvips
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\pdfmark.def"
+File: pdfmark.def 2010/01/16 v6.80c Hyperref definitions for pdfmark specials
+\pdf@docset=\toks32
+\pdf@box=\box67
+\pdf@toks=\toks33
+\pdf@defaulttoks=\toks34
+\Fld@listcount=\count148
+\c@bookmark@seq@number=\count149
+
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2009/12/18 v1.2 Rerun checks for auxiliary files (HO)
 
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\atveryend.sty"
 Package: atveryend 2009/12/11 v1.3 Hooks at very end of document (HO)
 Package atveryend Info: \enddocument detected (standard).
 )
-\Fld@listcount=\count149
-\c@bookmark@seq@number=\count150
-
-("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2009/12/18 v1.2 Rerun checks for auxiliary files (HO)
-
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\uniquecounter.sty"
 Package: uniquecounter 2009/12/18 v1.1 Provides unlimited unique counter (HO)
 )
@@ -608,7 +612,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 3
 26.
 )
 \Hy@SectionHShift=\skip67
-)
+))
 (D:\Github\MATLAB\data\table\Latex\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -695,24 +699,11 @@ LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
-
-("D:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.tex"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count151
-\scratchdimen=\dimen166
-\scratchbox=\box67
-\nofMPsegments=\count152
-\nofMParguments=\count153
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count154
-\MPscratchDim=\dimen167
-\MPnumerator=\count155
-\everyMPtoPDFconversion=\toks33
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 40.
- ("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2009/12/18 v2.35 Cross-referencing by name of section
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\refcount.sty"
@@ -721,7 +712,7 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
-\c@section@level=\count156
+\c@section@level=\count150
 )
 LaTeX Info: Redefining \ref on input line 40.
 LaTeX Info: Redefining \pageref on input line 40.
@@ -730,48 +721,39 @@ LaTeX Info: Redefining \pageref on input line 40.
 (D:\Github\MATLAB\data\table\Latex\main.out)
 \@outlinefile=\write4
 \AtBeginShipoutBox=\box68
-LaTeX Font Info:    Try loading font information for U+lasy on input line 92.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 113.
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+LaTeX Font Info:    Try loading font information for U+msa on input line 113.
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+LaTeX Font Info:    Try loading font information for U+msb on input line 113.
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
- [1
 
-{D:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
-}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+LaTeX Warning: Float too large for page by 61.7047pt on input line 117.
 
-(D:\Github\MATLAB\data\table\Latex\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+[1]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+ (D:\Github\MATLAB\data\table\Latex\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9217 strings out of 495285
- 128549 string characters out of 3180341
- 235904 words of memory out of 3000000
- 12217 multiletter control sequences out of 15000+200000
+ 8897 strings out of 495286
+ 124318 string characters out of 3180364
+ 250317 words of memory out of 3000000
+ 11906 multiletter control sequences out of 15000+200000
  6347 words of font info for 27 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,12n,38p,243b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/P
-rogram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Program F
-iles/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (1 page, 45937 bytes).
-PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36i,12n,38p,243b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on main.dvi (1 page, 10124 bytes).
