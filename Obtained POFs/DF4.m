@@ -32,18 +32,18 @@
 %     end;
 %  end;
 
-t=2.6;
-for t=0:0.1:2; 
+t=0.3;
+%for t=0:0.1:2; 
 a=sin(0.5*pi*t);
 b=1+abs(cos(0.5*pi*t));
 Ht=a+1.5;
 upp=b^Ht;
  f1=0:0.01:upp ;
  f2=(b-f1.^(1/Ht) ).^Ht;
- plot(f1+2*t,f2+2*t,'Linewidth',2)
+ plot(f1,f2,'Linewidth',2)
  hold on
-end;
-A=importdata('..\data\NHSS\10.20\PF\pf_DF4_1_17.dat');
+%end;
+A=importdata('..\data\NHSS\10.20\PF\pf_DF4_1_4.dat');
 F1=A(:,1)
 F2=A(:,2)
 plot(F1,F2,'ro'); %»­¸öÌå
