@@ -1,17 +1,21 @@
 hold off 
-t=10;
-% for t=0:0.1:1;
-    x1=0.25*(1+t):0.01:(1+t) ;
-     f1=x1;
-    f2=1./f1;
-    plot(f1,f2,'Linewidth',2)
-    hold on
-    pause(0.1);
- %end;
-hold on
-A=importdata('E:\project\new_project\SMC-PartA\project_dmoo\drm\PF\pf_DF7_4_101.dat');
-%A=importdata('E:\project\new_project\SMC-PartA\project_dmoo\drm\file\pf_DF6_102.dat');
-F1=A(:,1)
-F2=A(:,2)
-plot(F1,F2,'ro'); %画个体
-hold on
+ for t=0:1:20; 
+        x1=1:0.01:4 ;
+        
+        f1=(1+0.1*t)./x1; 
+        f2=x1./(1+0.1*t); 
+        plot(f1+0.2*t,f2+0.2*t,'Linewidth',2,'Color',' b ')
+        hold on
+       
+        str = sprintf('..\\data\\MOEAD-DE\\10.20\\PF\\pf_DF7_1_%1d.dat',t+1)
+        A=importdata(str);
+        F1=A(:,1)
+        F2=A(:,2)
+        plot(F1+0.2*t,F2+0.2*t,'r.'); %画个体
+        hold on
+end
+ylabel('f2+2t');
+xlabel('f1+2t');
+xlim([0,7]);
+legend({'POF','MOEA/D-DE'},'Location','northwest');
+title('DF7','Fontname','黑体','Fontsize',13,'FontWeight','bold');

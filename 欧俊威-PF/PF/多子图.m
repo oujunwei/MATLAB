@@ -1,0 +1,21 @@
+%     x=-4:0.1:4;
+%    subplot(2,2,1);
+%    y1=1/sqrt(2*pi)*exp(-1/2*x.^2);
+%    plot(x,y1);
+%    xlabel('变量x'),ylabel('变量密度y'),title('正太分布N(0,1)');
+%    subplot(2,2,2);
+%    y2=1/sqrt(2*pi)/2*exp(-1/2/4*x.^2);
+%    plot(x,y2);
+%    xlabel('变量x'),ylabel('概率密度y')
+%    title('正太分布N(0,4)');
+%    subplot(2,2,3);
+%    y3=1/sqrt(2*pi)/0.5*exp(-1/2/(0.5^2)*(x-1).^2);
+%    plot(x,y3);
+%    xlabel('变量x'),ylabel('概率密度y'),title('正太分布N(1,1/4)');
+%    subplot(2,2,4);
+%    y4=1/sqrt(2*pi)/0.5*exp(-1/2/(0.5^2)*(x+1).^2);
+%    plot(x,y4);
+%    xlabel('变量x'),ylabel('概率密度y'),title('正太分布N(-1,1/4)');
+x=0:.1:2*pi;
+subplot(2,1,1);plot(1:10);
+subplot(2,1,2);plot(x,sin(x));

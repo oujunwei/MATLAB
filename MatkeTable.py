@@ -6,12 +6,12 @@ path = os.getcwd()
 localPath = os.path.join(path,os.path.normpath("data"))
 
 # all compared algorithms.
-algorithms = ["DNSGAIIA","DNSGAIIB","RND","MOEADKF","NHSS"];
+algorithms = ["MOEAD-DE","MOEAD-DE(RND)","MOEAD-DE(B)","PPSMOEAD-DE","MOEADKF","NHSS"];
 
 #Each test problem includes the number of types. For example, "10.20"
 #refers that the severity of change is set to 10, and the frequency of
 #change is set to 20.
-type = [ "10.5","10.10", "10.20"];
+type = ["5.20", "10.20", "20.20"];
 
 metrics ="IGD";
 ouput = localPath+"\\table\\"+metrics+".dat";
