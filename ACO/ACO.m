@@ -29,7 +29,7 @@ fprintf('Initializing Parameters... \n');
 m = 50;                              % 蚂蚁数量
 alpha = 1;                           % 信息素重要程度因子
 beta = 5;                            % 启发函数重要程度因子
-rho = 0.02;                           % 信息素挥发因子
+rho = 0.5;                           % 信息素挥发因子
 Q = 1;                               % 常系数
 Eta = 1./D;                          % 启发函数
 Tau = ones(n,n);                     % 信息素矩阵
@@ -145,8 +145,9 @@ xlabel('城市位置横坐标')
 ylabel('城市位置纵坐标')
 title(['蚁群算法优化路径(最短距离:' num2str(Shortest_Length) ')'])
 figure(2)
-plot(1:iter_max,Length_best,'b',1:iter_max,Length_ave,'r:')
-legend('最短距离','平均距离')
+plot(1:iter_max,Length_best)
+legend('最短距离')
 xlabel('迭代次数')
 ylabel('距离')
-title('各代最短距离与平均距离对比')
+ylim([28000,46000]);
+title('各代最短距离')

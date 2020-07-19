@@ -67,8 +67,12 @@ plot(x,y,'b','linewidth',3); % m表示的是粉红色,-是表示的是连续的曲线线
 hold on;
 
 
-plot(7.9, 25,'kp','linewidth',4);
-legend('目标函数','搜索到的最大值');
+%plot(7.9, 25,'kp','linewidth',4);
+plot(7.9, 25,'r*','linewidth',4);
+plot(0.55,0,'k*','linewidth',3);
+plot(4,5,'kd','linewidth',3);
+plot(6.5,20,'kp','linewidth',2);
+legend('目标函数','搜索到的最大值','初始解1','初始解2','初始解3');
 xlabel('x'); % 给x轴贴标签
 ylabel('y'); % 给y轴贴标签
 grid on;

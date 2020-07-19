@@ -16,3 +16,7 @@ ylim([-20,25]);
 hold on;
 grid on;
 plot(x,-fval,'r*');
+%plot(1.58,18.5,'r*');
+f0 = 1;
+plot(7.4,0,'k*');
+legend('目标函数','搜索到解','初始解');
