@@ -1,8 +1,8 @@
 import os
-import WriteFile as wf
+import table.WriteFile as wf
 
 #path
-path = os.getcwd()
+path = os.getcwd().split('table')[0]
 localPath = os.path.join(path,os.path.normpath("data"))
 
 # all compared algorithms.
@@ -14,7 +14,7 @@ algorithms = ["MOEAD-DE","MOEAD-DE(RND)","MOEAD-DE(B)","PPSMOEAD-DE","MOEADKF","
 type = ["5.20", "10.20", "20.20"];
 
 metrics ="IGD";
-ouput = localPath+"\\table\\"+metrics+".dat";
+ouput = localPath+metrics+".dat";
 
 problems = [];
 # save algorithm, types (frequency), problems
