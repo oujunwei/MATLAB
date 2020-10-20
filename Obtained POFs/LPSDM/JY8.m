@@ -10,7 +10,7 @@ hold off
         plot(f1+0.2*t,f2+0.2*t,'b.')
         hold on
        
-        str = sprintf('D:\\Github\\EMO\\EMO\\data\\dynamic\\PF\\pf_JY6_3_%1d.dat',t+1)
+        str = sprintf('..\\..\\data\\LPSDM\\MoE\\10.10\\PF\\pf_JY8_3_%1d.dat',t+1)
         A=importdata(str);
         F1=A(:,1)
         F2=A(:,2)
@@ -20,7 +20,7 @@ end
  ylabel('f1+2t','fontsize',18);
  xlabel('f2+2t','fontsize',18);
  set(gca,'FontSize',18);
-legend({'POF','DNSAG-II-A'},'Location','northwest');
+legend({'POF','MoE'},'Location','northwest');
 %set(gca,'XTick',[0:1:5]);
 %set(gca,'YTick',[0:1:5]);
 ylim([0,5]);

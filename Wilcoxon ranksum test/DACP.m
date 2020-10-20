@@ -1,0 +1,21 @@
+clear all
+A=importdata('..\data\DNSGAIIA\10.20\evaluate\avg\DF3.dat');
+DNSGAIIA = A(1:10,2);
+B=importdata('..\data\DNSGAIIB\10.20\evaluate\avg\DF3.dat');
+DNSGAIIB = B(1:10,2);
+C=importdata('..\data\MOEAD-DE\10.20\evaluate\avg\DF3.dat');
+MOEADRND = C(1:10,2);
+D=importdata('..\data\MOEAD-DE(B)\10.20\evaluate\avg\DF3.dat');
+PPS = D(1:10,2);
+E=importdata('..\data\MOEAD-DE(RND)\10.20\evaluate\avg\DF3.dat');
+SGEA = E(1:10,2);
+F=importdata('..\data\MOEADKF\10.20\evaluate\avg\DF3.dat');
+MoE = F(1:10,2);
+G=importdata('..\data\NHSS\10.20\evaluate\avg\DF3.dat');
+LPSDM = G(1:10,2);
+[p1,h1] = ranksum(DNSGAIIA',LPSDM',0.05);
+[p2,h2] = ranksum(DNSGAIIB',LPSDM',0.05);
+[p3,h3] = ranksum(MOEADRND',LPSDM',0.05);
+[p4,h4] = ranksum(PPS',LPSDM',0.05);
+[p5,h5] = ranksum(SGEA',LPSDM',0.05);
+[p6,h6] = ranksum(MoE',LPSDM',0.05);
