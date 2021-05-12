@@ -11,11 +11,11 @@ y1 = [4.84e-3 4.71e-3 4.54e-3 4.64e-3 4.82e-3;
 4.35e-3 4.87e-3 4.71e-3 4.72e-3 4.76e-3];
 y = log10(y1)+3;
 h = bar(c,y,1,'FaceColor','flat');
-ylabel('log(IGD)+6','fontsize',18);
+ylabel('log(MIGD)+6','fontsize',18);
 %xlim([10,24]);
 %ylabel('IGD','fontsize',18);
 set(gca, 'XTickLabel', names , 'TickLabelInterpreter', 'latex', 'FontSize' , 10); % , 'TickLabel
-legend({'10%(N-|F_1|)','30%(N-|F_1|)','50%(N-|F_1|)','70%(N-|F_1|)','90%(N-|F_1|)'},'Location','northwest','FontSize' , 10);
+legend({'10%(N-|L_1|)','30%(N-|L_1|)','50%(N-|L_1|)','70%(N-|L_1|)','90%(N-|L_1|)'},'Location','northwest','FontSize' , 10);
 
 h(1).CData(1,:) = [0 1 0]; % group 1 1st bar
 h(1).CData(2,:) = [0 1 0]; % group 1 2nd bar
