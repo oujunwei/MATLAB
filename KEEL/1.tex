@@ -1,0 +1,76 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for 1xN statistical comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+
+\section{Average rankings of Friedman test}
+
+
+Average ranks obtained by each method in the Friedman test.
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+IGD&Average ranking value&Final rank&HVD&Average ranking value&Final rank\\
+\hline
+MOEA/D-HPMS&3.2692&3&MOEA/D-HPMS&3.9231&3\\
+MOEA/D-MoE&4.5385&5 &MOEA/D-MoE&5.1538&6\\
+MOEA/D-IEC&2.7308&2 & MOEA/D-IEC&2.4615&2\\
+MOEA/D-SVR&5.1538&6 & MOEA/D-SVR&4.3077&5\\
+MRCDMO&4.0769&4     & MRCDMO&3.8462&4\\
+MOEA/D-HSS&1.2308&1 & MOEA/D-HSS&1.3077&1\\
+\hline\end{tabular}
+\caption{Average Rankings of the algorithms (Friedman)}
+\end{table}
+
+Friedman statistic (distributed according to chi-square with 5 degrees of freedom): 36.923077. \newline P-value computed by Friedman Test: 0.000001.\newline
+
+
+\newpage
+
+\section{Post hoc comparison (Friedman)}
+
+
+P-values obtained in by applying post hoc methods over the results of Friedman procedure.
+
+\begin{table}[!htp]
+\centering\footnotesize
+\begin{tabular}{cccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$\\
+\hline5& MOEA/D-SVR&5.346253&0\\4& MOEA/D-MoE&4.507625&0.000007\\3& MRCDMO&3.878654&0.000105\\2&MOEA/D-HPMS&2.777955&0.00547\\1& MOEA/D-IEC&2.044155&0.040938\\\hline
+\end{tabular}
+\caption{Post Hoc comparison Table for $\alpha=0.05$ (FRIEDMAN)}
+\end{table}
+\newpage
+
+\section{Adjusted P-Values (Friedman)}
+
+
+Adjusted P-values obtained through the application of the post hoc methods (Friedman).
+
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1& MOEA/D-SVR&0\\2& MOEA/D-MoE&0.000007\\3& MRCDMO&0.000105\\4&MOEA/D-HPMS&0.00547\\5& MOEA/D-IEC&0.040938\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (I)}
+\end{table}
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1& MOEA/D-SVR&0\\2& MOEA/D-MoE&0.000007\\3& MRCDMO&0.000105\\4&MOEA/D-HPMS&0.00547\\5& MOEA/D-IEC&0.040938\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (II)}
+\end{table}
+
+\newpage
+\end{landscape}\end{document} 

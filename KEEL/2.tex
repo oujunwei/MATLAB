@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for 1xN statistical comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+
+\section{Average rankings of Friedman test}
+
+
+Average ranks obtained by each method in the Friedman test.
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+MOEA/D-HPMS&3.9231\\ 
+MOEA/D-MoE&5.1538\\
+ MOEA/D-IEC&2.4615\\
+ MOEA/D-SVR&4.3077\\ 
+ MRCDMO&3.8462\\
+ MOEA/D-HSS&1.3077\\
+ \hline\end{tabular}
+\caption{Average Rankings of the algorithms (Friedman)}
+\end{table}
+
+Friedman statistic (distributed according to chi-square with 5 degrees of freedom): 35.549451. \newline P-value computed by Friedman Test: 0.000001.\newline
+
+
+\newpage
+
+\section{Post hoc comparison (Friedman)}
+
+
+P-values obtained in by applying post hoc methods over the results of Friedman procedure.
+
+\begin{table}[!htp]
+\centering\footnotesize
+\begin{tabular}{cccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$\\
+\hline5& MOEA/D-MoE&5.241424&0\\4& MOEA/D-SVR&4.088311&0.000043\\3&MOEA/D-HPMS&3.564168&0.000365\\2& MRCDMO&3.45934&0.000542\\1& MOEA/D-IEC&1.572427&0.115851\\\hline
+\end{tabular}
+\caption{Post Hoc comparison Table for $\alpha=0.05$ (FRIEDMAN)}
+\end{table}
+\newpage
+
+\section{Adjusted P-Values (Friedman)}
+
+
+Adjusted P-values obtained through the application of the post hoc methods (Friedman).
+
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1& MOEA/D-MoE&0\\2& MOEA/D-SVR&0.000043\\3&MOEA/D-HPMS&0.000365\\4& MRCDMO&0.000542\\5& MOEA/D-IEC&0.115851\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (I)}
+\end{table}
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1& MOEA/D-MoE&0\\2& MOEA/D-SVR&0.000043\\3&MOEA/D-HPMS&0.000365\\4& MRCDMO&0.000542\\5& MOEA/D-IEC&0.115851\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (II)}
+\end{table}
+
+\newpage
+\end{landscape}\end{document}

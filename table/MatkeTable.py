@@ -1,24 +1,24 @@
 import os
-import table.WriteFile as wf
+import WriteFile as wf
 
 #path
 path = os.getcwd().split('table')[0]
-localPath = os.path.join(path,os.path.normpath("data"))
+localPath = os.path.join(path,os.path.normpath("data/APMR"))
 
 # all compared algorithms.
-algorithms = ["MOEAD-DE","MOEAD-DE(RND)","MOEAD-DE(B)","PPSMOEAD-DE","MOEADKF","NHSS"];
+algorithms = ['DNSGAIIA', 'DNSGAIIB', 'PPS', 'SGEA', 'MRCDMO', 'APMR']
 
 #Each test problem includes the number of types. For example, "10.20"
 #refers that the severity of change is set to 10, and the frequency of
 #change is set to 20.
-type = ["5.20", "10.20", "20.20"];
+type = ['10.10.100', '10.20.100', '10.30.100']
 
-metrics ="IGD";
-ouput = localPath+metrics+".dat";
+metrics = 'IGD'
+ouput = localPath + '\\' + metrics + '.dat'
 
-problems = [];
+problems = ['DF1', 'DF2', 'DF3', 'DF4', 'DF5', 'DF6', 'DF7', 'DF8', 'DF9', 'DF10', 'DF11', 'DF12', 'DF13', 'DF14']
 # save algorithm, types (frequency), problems
-all_result = [] ; # save all results including all algorithms.
+all_result = []  # save all results including all algorithms.
 # how to use it? and format of table can be found in SGEA, a dynamic paper.
 #
 #First, we need to set some parameter, including algorithms
@@ -30,45 +30,43 @@ all_result = [] ; # save all results including all algorithms.
 
 for i in range(0, len(algorithms)):
 
-    algorit_result =[] # save all results of an algorithm.
+    algorit_result = []# save all results of an algorithm.
     for j in range(0, len(type)):
-        metric_p =localPath+"\\"+algorithms[i]+"\\"+type[j]+"\\evaluate\\statistics\\"+metrics+".dat"
-        rs=wf.readFile(metric_p,"r","utf-8")
+        metric_p =localPath+"\\"+algorithms[i]+"\\"+type[j]+"\\evaluate"+"\\statistics\\"+metrics+".dat"
+
+        rs=wf.readFile(metric_p, "r", "utf-8")
 
         mean_deviation = []
         for k in range(0, len(rs)): #remove 0,for example 2.41e-002
             s = rs[k].split()
 
             new_str = "&" #revise mean values and standard deviation
-            # if the figure is 2.41e-002, we set to 6 and 7.
-            # if the figure is 2.412e-002, we set to 7 and 8.
-            for m in range(0, len(s[1])):
-                if m != 7 and m != 8:
-                    new_str = new_str + s[1][m]
-            new_str = new_str + "("
-            for m in range(0, len(s[2])):
-                if m != 7 and m != 8:
-                    new_str = new_str + s[2][m]
-            new_str = new_str + ")$"+"\\"+"ddagger$"
+            # s1 = s[1].split('e')
+            # new_str = new_str + s1[0][0:4] +'e'+ s1[1][0]+s1[1][2]+'('
+            # s2 = s[2].split('e')
+            # new_str = new_str + s2[0][0:4] + 'e' + s2[1][0] + s2[1][2] + ")$"+"\\"+"ddagger$"
+
+            s1 = s[1].split('e')
+            new_str = new_str + s1[0][0:5] + 'e' + s1[1][0]+s1[1][3]+'('
+            s2 = s[2].split('e')
+            new_str = new_str + s2[0][0:5] + 'e' + s2[1][0] + s2[1][3] + ")$"+"\\"+"ddagger$"
+
             mean_deviation.append(new_str)
-            #save problems
-            if i == 0 and j ==0:
-                problems.append(s[0])
 
         algorit_result.append(mean_deviation)
 
     all_result.append(algorit_result)
 
 # save a file
-file = open(ouput, 'a+',encoding='utf-8')
+file = open(ouput, 'a+', encoding='utf-8')
 
 file.write('Problems  & $(n_t, \\tau_t)$')
-for i in range (0, len(algorithms)):
-    file.write(' &' + algorithms[i] )
+for i in range(0, len(algorithms)):
+    file.write(' &' + algorithms[i])
 
 file.write("\\\\" + '\n')
 
-for i in  range(0, len(problems)):
+for i in range(0, len(problems)):
     file.write("\\hline  \\multirow{3}{*}{"+problems[i]+"}")
     file.write('\n')
     for j in range(0, len(type)):
@@ -78,3 +76,4 @@ for i in  range(0, len(problems)):
         file.write("\\\\")
         file.write('\n')
 file.close()
+print('Success')

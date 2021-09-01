@@ -11,8 +11,8 @@ hold off
        % plot(f1+0.2*t,f2+0.2*t,'Linewidth',2,'Color',' b ')
        hold on
        
-        str = sprintf('..\\data\\MOEAD-DE\\10.20\\PF\\pf_DF13_1_%1d.dat',2)
-        A=importdata(str);
+      
+        A=importdata('D:\Github\MATLAB\data\HSS\MoE\10.10.100\PF\pf_DF13_1_4.dat');
         F1=A(:,1)
         F2=A(:,2)
         F3 = A(:,3);
